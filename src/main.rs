@@ -13,8 +13,8 @@ fn main() {
                         let msg = msg.to_string();
                         let split_msg: Vec<&str> = msg.split(',').collect();
                         format!(
-                            "x: {}\ty: {}\tz: {}",
-                            split_msg[0], split_msg[1], split_msg[2]
+                            "timestamp: {}\nx: {}\ty: {}\tz: {}\n",
+                            split_msg[0], split_msg[1], split_msg[2], split_msg[3]
                         )
                     },
                     Err(_) => {
